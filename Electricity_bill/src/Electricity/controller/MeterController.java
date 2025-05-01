@@ -65,6 +65,15 @@ public class MeterController {
 
         return meterDAO.getMeterByNumber(meterNumber);
     }
+    
+    /**
+     * Get meter by number - alias method for getMeterInfo for test compatibility
+     * @param meterNumber Meter number
+     * @return Meter object if found, null otherwise
+     */
+    public Meter getMeterByNumber(String meterNumber) {
+        return getMeterInfo(meterNumber);
+    }
 
     /**
      * Update meter information

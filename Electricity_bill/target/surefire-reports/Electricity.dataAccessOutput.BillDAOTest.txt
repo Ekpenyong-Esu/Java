@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: Electricity.dataAccessOutput.BillDAOTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.154 s <<< FAILURE! -- in Electricity.dataAccessOutput.BillDAOTest
+Electricity.dataAccessOutput.BillDAOTest.testGetBill -- Time elapsed: 0.019 s <<< ERROR!
+java.lang.NullPointerException
+	at Electricity.dataAccessOutput.BillDAO.getBill(BillDAO.java:81)
+	at Electricity.dataAccessOutput.BillDAOTest.testGetBill(BillDAOTest.java:105)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Electricity.dataAccessOutput.BillDAOTest.testGetBillsByMeter -- Time elapsed: 0.016 s <<< ERROR!
+java.lang.NullPointerException
+	at Electricity.dataAccessOutput.BillDAO.getBillsByMeter(BillDAO.java:175)
+	at Electricity.dataAccessOutput.BillDAOTest.testGetBillsByMeter(BillDAOTest.java:156)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Electricity.dataAccessOutput.BillDAOTest.testGetUnpaidBills -- Time elapsed: 0.016 s <<< ERROR!
+java.lang.NullPointerException
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:543)
+	at Electricity.dataAccessOutput.BillDAO.mapResultSetToBill(BillDAO.java:470)
+	at Electricity.dataAccessOutput.BillDAO.getUnpaidBills(BillDAO.java:413)
+	at Electricity.dataAccessOutput.BillDAOTest.testGetUnpaidBills(BillDAOTest.java:197)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Electricity.dataAccessOutput.BillDAOTest.testGetBillNotFound -- Time elapsed: 0.025 s <<< ERROR!
+java.lang.NullPointerException
+	at Electricity.dataAccessOutput.BillDAO.getBill(BillDAO.java:81)
+	at Electricity.dataAccessOutput.BillDAOTest.testGetBillNotFound(BillDAOTest.java:126)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+

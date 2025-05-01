@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: Electricity.dataAccessOutput.TaxDAOTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.431 s <<< FAILURE! -- in Electricity.dataAccessOutput.TaxDAOTest
+Electricity.dataAccessOutput.TaxDAOTest.testUpdateTax -- Time elapsed: 0.073 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at Electricity.dataAccessOutput.TaxDAOTest.testUpdateTax(TaxDAOTest.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.dataAccessOutput.TaxDAOTest.testGetAllTaxes -- Time elapsed: 0.054 s <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at Electricity.dataAccessOutput.TaxDAOTest.testGetAllTaxes(TaxDAOTest.java:170)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.dataAccessOutput.TaxDAOTest.testDeleteTax -- Time elapsed: 0.116 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at Electricity.dataAccessOutput.TaxDAOTest.testDeleteTax(TaxDAOTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.dataAccessOutput.TaxDAOTest.testGetCurrentTax -- Time elapsed: 0.047 s <<< FAILURE!
+java.lang.AssertionError: expected:<9.5> but was:<0.0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at Electricity.dataAccessOutput.TaxDAOTest.testGetCurrentTax(TaxDAOTest.java:115)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.dataAccessOutput.TaxDAOTest.testSaveTax -- Time elapsed: 0.065 s <<< FAILURE!
+Wanted but not invoked:
+mockStatement.setDouble(1, 9.5d);
+-> at Electricity.dataAccessOutput.TaxDAOTest.testSaveTax(TaxDAOTest.java:70)
+Actually, there were zero interactions with this mock.
+
+	at Electricity.dataAccessOutput.TaxDAOTest.testSaveTax(TaxDAOTest.java:70)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+

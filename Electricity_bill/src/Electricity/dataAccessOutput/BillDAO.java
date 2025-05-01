@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +46,15 @@ public class BillDAO extends BaseDAO {
         }
 
         return success;
+    }
+    
+    /**
+     * Add a new bill to the database (alias method for saveBill for testing compatibility)
+     * @param bill Bill object with details
+     * @return true if saved successfully, false otherwise
+     */
+    public boolean addBill(Bill bill) {
+        return saveBill(bill);
     }
 
     /**
@@ -380,6 +390,61 @@ public class BillDAO extends BaseDAO {
         }
 
         return tax;
+    }
+
+    /**
+     * Get all unpaid bills from the database
+     * @return List of bills with "UNPAID" status
+     */
+    public List<Bill> getUnpaidBills() {
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+        List<Bill> unpaidBills = new ArrayList<>();
+
+        try {
+            conn = getConnection();
+            stmt = conn.createStatement();
+            String sql = "SELECT * FROM bill WHERE status = 'UNPAID'";
+            
+            rs = stmt.executeQuery(sql);
+
+            while (rs.next()) {
+                unpaidBills.add(mapResultSetToBill(rs));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error getting unpaid bills: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            closeResources(conn, stmt, rs);
+        }
+
+        return unpaidBills;
+    }
+
+    /**
+     * Get ResultSet of all unpaid bills
+     * @return ResultSet containing all unpaid bills
+     */
+    public ResultSet getUnpaidBillsResultSet() {
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = getConnection();
+            stmt = conn.createStatement();
+            String sql = "SELECT * FROM bill WHERE status = 'UNPAID'";
+            
+            rs = stmt.executeQuery(sql);
+            return rs;
+        } catch (SQLException e) {
+            System.out.println("Error getting unpaid bills: " + e.getMessage());
+            e.printStackTrace();
+            closeResources(conn, stmt, rs);
+        }
+        
+        return null;
     }
 
     /**

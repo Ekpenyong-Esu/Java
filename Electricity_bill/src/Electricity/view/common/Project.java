@@ -3,6 +3,7 @@ package Electricity.view.common;
 import Electricity.view.admin.CalculateBill;
 import Electricity.view.admin.CustomerDetails;
 import Electricity.view.admin.NewCustomer;
+import Electricity.view.admin.TaxConfiguration;
 import Electricity.view.customer.BillDetails;
 import Electricity.view.customer.PayBill;
 import Electricity.view.customer.UpdateInformation;
@@ -135,12 +136,18 @@ public class Project extends JFrame implements ActionListener {
         JMenuItem calculateBillItem = createMenuItem(
                 "Calculate Bill", "images/icon5.png", 
                 'B', KeyEvent.VK_B, Color.WHITE);
+                
+        // Tax Configuration menu item
+        JMenuItem taxConfigItem = createMenuItem(
+                "Tax Configuration", "images/icon8.png", 
+                'T', KeyEvent.VK_T, Color.WHITE);
         
         // Add items to Master menu
         masterMenu.add(newCustomerItem);
         masterMenu.add(customerDetailsItem);
         masterMenu.add(depositDetailsItem);
         masterMenu.add(calculateBillItem);
+        masterMenu.add(taxConfigItem);
     }
     
     /**
@@ -335,6 +342,9 @@ public class Project extends JFrame implements ActionListener {
                 break;
             case "Deposit Details":
                 new DepositDetails().setVisible(true);
+                break;
+            case "Tax Configuration":
+                new TaxConfiguration().setVisible(true);
                 break;
         }
     }

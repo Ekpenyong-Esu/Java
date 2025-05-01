@@ -4,6 +4,7 @@ package Electricity.model;
  * Model class representing tax rates and billing constants in the Electricity Billing System.
  */
 public class Tax {
+    private int id;
     private double costPerUnit;
     private double meterRent;
     private double serviceCharge;
@@ -30,7 +31,28 @@ public class Tax {
         this.fixedTax = fixedTax;
     }
 
+    /**
+     * Parameterized constructor with ID to create a tax object with all rates
+     */
+    public Tax(int id, double costPerUnit, double meterRent, double serviceCharge,
+               double serviceTax, double climateChangeLevy, double fixedTax) {
+        this.id = id;
+        this.costPerUnit = costPerUnit;
+        this.meterRent = meterRent;
+        this.serviceCharge = serviceCharge;
+        this.serviceTax = serviceTax;
+        this.climateChangeLevy = climateChangeLevy;
+        this.fixedTax = fixedTax;
+    }
+
     // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public double getCostPerUnit() {
         return costPerUnit;
@@ -83,11 +105,12 @@ public class Tax {
     @Override
     public String toString() {
         return "Tax{" +
-                "costPerUnit=" + costPerUnit +
+                "id=" + id +
+                ", costPerUnit=" + costPerUnit +
                 ", meterRent=" + meterRent +
                 ", serviceCharge=" + serviceCharge +
                 ", serviceTax=" + serviceTax +
-                ", swachhBharatCess=" + climateChangeLevy +
+                ", climateChangeLevy=" + climateChangeLevy +
                 ", fixedTax=" + fixedTax +
                 '}';
     }

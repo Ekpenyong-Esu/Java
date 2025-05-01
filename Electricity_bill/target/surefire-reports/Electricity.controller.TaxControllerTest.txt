@@ -1,0 +1,101 @@
+-------------------------------------------------------------------------------
+Test set: Electricity.controller.TaxControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 2.091 s <<< FAILURE! -- in Electricity.controller.TaxControllerTest
+Electricity.controller.TaxControllerTest.testGetTaxHistory -- Time elapsed: 1.116 s <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at Electricity.controller.TaxControllerTest.testGetTaxHistory(TaxControllerTest.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.controller.TaxControllerTest.testUpdateTaxRates -- Time elapsed: 0.174 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at Electricity.controller.TaxControllerTest.testUpdateTaxRates(TaxControllerTest.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.controller.TaxControllerTest.testGetCurrentTaxRates -- Time elapsed: 0.230 s <<< FAILURE!
+java.lang.AssertionError: expected:<Tax{id=0, costPerUnit=9.5, meterRent=55.0, serviceCharge=22.5, serviceTax=5.5, climateChangeLevy=1.25, fixedTax=18.5}> but was:<Tax{id=0, costPerUnit=0.0, meterRent=0.0, serviceCharge=0.0, serviceTax=0.0, climateChangeLevy=0.0, fixedTax=0.0}>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Electricity.controller.TaxControllerTest.testGetCurrentTaxRates(TaxControllerTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.controller.TaxControllerTest.testCalculateBillTax -- Time elapsed: 0.070 s <<< FAILURE!
+java.lang.AssertionError: expected:<149.5> but was:<0.0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at Electricity.controller.TaxControllerTest.testCalculateBillTax(TaxControllerTest.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.controller.TaxControllerTest.testCalculateTotalBill -- Time elapsed: 0.140 s <<< FAILURE!
+java.lang.AssertionError: expected:<1099.5> but was:<0.0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at Electricity.controller.TaxControllerTest.testCalculateTotalBill(TaxControllerTest.java:141)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.controller.TaxControllerTest.testDeleteTaxEntry -- Time elapsed: 0.072 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at Electricity.controller.TaxControllerTest.testDeleteTaxEntry(TaxControllerTest.java:154)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+
+Electricity.controller.TaxControllerTest.testCreateTax -- Time elapsed: 0.222 s <<< FAILURE!
+Wanted but not invoked:
+taxDAO.saveTax(<any Electricity.model.Tax>);
+-> at Electricity.dataAccessOutput.TaxDAO.saveTax(TaxDAO.java:23)
+Actually, there were zero interactions with this mock.
+
+	at Electricity.dataAccessOutput.TaxDAO.saveTax(TaxDAO.java:23)
+	at Electricity.controller.TaxControllerTest.testCreateTax(TaxControllerTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+

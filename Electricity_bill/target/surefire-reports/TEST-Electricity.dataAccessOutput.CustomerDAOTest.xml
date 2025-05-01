@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.dataAccessOutput.CustomerDAOTest" time="0.188" tests="9" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mahon\Desktop\java\Electricity_bill\target\test-classes;C:\Users\mahon\Desktop\java\Electricity_bill\target\classes;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mahon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mahon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.2\junit-vintage-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mahon\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\mahon\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\mahon\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\mahon\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\mahon\.m2\repository\org\xerial\sqlite-jdbc\3.45.1.0\sqlite-jdbc-3.45.1.0.jar;C:\Users\mahon\.m2\repository\net\sourceforge\rs2xml\rs2xml\1.0\rs2xml-1.0.jar;C:\Users\mahon\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694 2025-05-01T12-08-50_185-jvmRun1 surefire-20250501120850403_1tmp surefire_0-20250501120850403_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\mahon\Desktop\java\Electricity_bill\target\test-classes;C:\Users\mahon\Desktop\java\Electricity_bill\target\classes;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mahon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mahon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.2\junit-vintage-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mahon\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\mahon\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\mahon\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\mahon\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\mahon\.m2\repository\org\xerial\sqlite-jdbc\3.45.1.0\sqlite-jdbc-3.45.1.0.jar;C:\Users\mahon\.m2\repository\net\sourceforge\rs2xml\rs2xml\1.0\rs2xml-1.0.jar;C:\Users\mahon\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mahon"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\mahon\Desktop\java\Electricity_bill"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.27+6"/>
+    <property name="user.name" value="mahon"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-11.0.27+6"/>
+    <property name="localRepository" value="C:\Users\mahon\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\mahon\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.27"/>
+    <property name="user.dir" value="C:\Users\mahon\Desktop\java\Electricity_bill"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin;C:\Program Files (x86)\STMicroelectronics\stlink_server;C:\ST\STM32CubeCLT_1.18.0;C:\ST\STM32CubeCLT_1.18.0\CMake\bin;C:\ST\STM32CubeCLT_1.18.0\Ninja\bin;C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin;C:\ST\STM32CubeCLT_1.18.0\STLink-gdb-server\bin;C:\ST\STM32CubeCLT_1.18.0\STM32CubeProgrammer\bin;C:\MinGW\bin;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\CMake\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\mahon\Downloads\v5.0.11\TryGhost-node-sqlite3-caaf66e;C:\Program Files\PuTTY\;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\LLVM\bin;C:\Program Files\LLVM\bin;C:\Users\mahon\Downloads\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\mahon\AppData\Local\Programs\MiKTeX\miktex\bin\x64;C:\Terraform;C:\msys64;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\mahon\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\mahon\AppData\Local\activestate\cache\bin;C:\Python312\Scripts\;C:\Python312\;C:\Python311\Scripts\;C:\Python311\;C:\Python37\Scripts\;C:\Python37\;C:\Users\mahon\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mahon\AppData\Local\Programs\Python\Python37\;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin;C:\Users\mahon\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.3\bin;C:\Program Files\JetBrains\CLion 2023.1.4\bin;C:\Users\mahon\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\mahon\AppData\Local\Programs\MiKTeX\miktex\bin\x64;C:\Terraform;C:\MinGW\bin;C:\msys64;C:\Users\mahon\.dotnet\tools;C:\Program Files\JetBrains\CLion 2024.3.5\bin;;C:\Program Files\JetBrains\PyCharm 2024.3.5\bin;;C:\ProgramData\mingw64\mingw64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.5\bin;;C:\Program Files\JetBrains\WebStorm 2024.3.5\bin;;C:\Users\mahon\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 9.3\bin;C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;;c:\Users\mahon\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="11.0.27+6"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testAddCustomerFailure" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.009"/>
+  <testcase name="testGetAllCustomersSQLException" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.007"/>
+  <testcase name="testAddCustomer" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.014"/>
+  <testcase name="testGetAllMeterNumbers" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.023">
+    <failure message="First meter number should be M12345 expected:&lt;M12345&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: First meter number should be M12345 expected:<M12345> but was:<null>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllMeterNumbers(CustomerDAOTest.java:192)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+]]></failure>
+  </testcase>
+  <testcase name="testGetCustomerByMeter" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.046">
+    <failure message="Retrieved meter should match expected:&lt;M12345&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Retrieved meter should match expected:<M12345> but was:<null>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at Electricity.dataAccessOutput.CustomerDAOTest.testGetCustomerByMeter(CustomerDAOTest.java:117)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+]]></failure>
+  </testcase>
+  <testcase name="testGetAllCustomers" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.037">
+    <failure message="&#10;Wanted but not invoked:&#10;mockConnection.createStatement();&#10;-&gt; at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllCustomers(CustomerDAOTest.java:163)&#10;&#10;However, there were exactly 2 interactions with this mock:&#10;mockConnection.prepareStatement(&#10;    &quot;SELECT * FROM customer&quot;&#10;);&#10;-&gt; at Electricity.dataAccessOutput.CustomerDAO.getAllCustomers(CustomerDAO.java:160)&#10;&#10;mockConnection.close();&#10;-&gt; at Electricity.dataAccessOutput.BaseDAO.closeConnection(BaseDAO.java:75)&#10;&#10;" type="Wanted but not invoked"><![CDATA[Wanted but not invoked:
+mockConnection.createStatement();
+-> at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllCustomers(CustomerDAOTest.java:163)
+
+However, there were exactly 2 interactions with this mock:
+mockConnection.prepareStatement(
+    "SELECT * FROM customer"
+);
+-> at Electricity.dataAccessOutput.CustomerDAO.getAllCustomers(CustomerDAO.java:160)
+
+mockConnection.close();
+-> at Electricity.dataAccessOutput.BaseDAO.closeConnection(BaseDAO.java:75)
+
+
+	at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllCustomers(CustomerDAOTest.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+]]></failure>
+  </testcase>
+  <testcase name="testUpdateCustomer" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.015"/>
+  <testcase name="testGetCustomerByMeterNotFound" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.005"/>
+  <testcase name="testAddCustomerSQLException" classname="Electricity.dataAccessOutput.CustomerDAOTest" time="0.016">
+    <system-out><![CDATA[Error adding customer: Test exception
+]]></system-out>
+    <system-err><![CDATA[java.sql.SQLException: Test exception
+	at Electricity.dataAccessOutput.CustomerDAO.addCustomer(CustomerDAO.java:40)
+	at Electricity.dataAccessOutput.CustomerDAOTest.testAddCustomerSQLException(CustomerDAOTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+</testsuite>

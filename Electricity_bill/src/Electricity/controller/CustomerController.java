@@ -159,4 +159,12 @@ public class CustomerController {
     public boolean customerExists(String meter) {
         return getCustomerByMeter(meter) != null;
     }
+    
+    /**
+     * Get all meter numbers from customer records
+     * @return List of all meter numbers
+     */
+    public List<String> getAllMeterNumbers() {
+        return customerDAO.getAllMeterNumbers();
+    }
 }

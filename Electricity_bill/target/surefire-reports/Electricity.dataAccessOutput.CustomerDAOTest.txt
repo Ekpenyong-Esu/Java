@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: Electricity.dataAccessOutput.CustomerDAOTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.188 s <<< FAILURE! -- in Electricity.dataAccessOutput.CustomerDAOTest
+Electricity.dataAccessOutput.CustomerDAOTest.testGetAllMeterNumbers -- Time elapsed: 0.023 s <<< FAILURE!
+java.lang.AssertionError: First meter number should be M12345 expected:<M12345> but was:<null>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllMeterNumbers(CustomerDAOTest.java:192)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Electricity.dataAccessOutput.CustomerDAOTest.testGetCustomerByMeter -- Time elapsed: 0.046 s <<< FAILURE!
+java.lang.AssertionError: Retrieved meter should match expected:<M12345> but was:<null>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at Electricity.dataAccessOutput.CustomerDAOTest.testGetCustomerByMeter(CustomerDAOTest.java:117)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Electricity.dataAccessOutput.CustomerDAOTest.testGetAllCustomers -- Time elapsed: 0.037 s <<< FAILURE!
+Wanted but not invoked:
+mockConnection.createStatement();
+-> at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllCustomers(CustomerDAOTest.java:163)
+
+However, there were exactly 2 interactions with this mock:
+mockConnection.prepareStatement(
+    "SELECT * FROM customer"
+);
+-> at Electricity.dataAccessOutput.CustomerDAO.getAllCustomers(CustomerDAO.java:160)
+
+mockConnection.close();
+-> at Electricity.dataAccessOutput.BaseDAO.closeConnection(BaseDAO.java:75)
+
+
+	at Electricity.dataAccessOutput.CustomerDAOTest.testGetAllCustomers(CustomerDAOTest.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+

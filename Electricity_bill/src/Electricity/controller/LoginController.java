@@ -82,6 +82,44 @@ public class LoginController {
     }
 
     /**
+     * Update specific user details
+     * @param meterNo Meter number to identify the user
+     * @param username Updated username
+     * @param name Updated full name
+     * @param password Updated password
+     * @param userType Updated user type
+     * @return true if update successful, false otherwise
+     */
+    public boolean updateUserDetails(String meterNo, String username, String name, String password, String userType) {
+        // Input validation
+        if (meterNo == null || meterNo.trim().isEmpty()) {
+            return false;
+        }
+
+        // Get existing user
+        Login user = getUserByMeterNo(meterNo);
+        if (user == null) {
+            return false;
+        }
+
+        // Update fields if provided
+        if (username != null && !username.trim().isEmpty()) {
+            user.setUsername(username);
+        }
+        if (name != null && !name.trim().isEmpty()) {
+            user.setName(name);
+        }
+        if (password != null && !password.trim().isEmpty()) {
+            user.setPassword(password);
+        }
+        if (userType != null && !userType.trim().isEmpty()) {
+            user.setUserType(userType);
+        }
+
+        return updateUser(user);
+    }
+
+    /**
      * Get user information by meter number
      * @param meterNo Meter number
      * @return Login object with user details if found, null otherwise

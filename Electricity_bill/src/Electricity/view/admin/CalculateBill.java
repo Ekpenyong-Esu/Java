@@ -224,8 +224,19 @@ public class CalculateBill extends JFrame implements ActionListener {
         cancelButton.setForeground(BUTTON_FG);
         cancelButton.addActionListener(this);
         
+        // Add "View Unpaid Bills" button
+        JButton viewUnpaidButton = new JButton("View Unpaid Bills");
+        viewUnpaidButton.setBounds(100, 390, 230, 25);
+        viewUnpaidButton.setBackground(new Color(204, 0, 0)); // Red color to highlight unpaid bills
+        viewUnpaidButton.setForeground(BUTTON_FG);
+        viewUnpaidButton.addActionListener(e -> {
+            // Open the UnpaidBillsView when clicked
+            new Electricity.view.reports.UnpaidBillsView().setVisible(true);
+        });
+        
         mainPanel.add(submitButton);
         mainPanel.add(cancelButton);
+        mainPanel.add(viewUnpaidButton);
     }
     
     /**

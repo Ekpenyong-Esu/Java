@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: Electricity.dataAccessOutput.LoginDAOTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.092 s <<< FAILURE! -- in Electricity.dataAccessOutput.LoginDAOTest
+Electricity.dataAccessOutput.LoginDAOTest.testAuthenticate -- Time elapsed: 0.012 s <<< FAILURE!
+java.lang.AssertionError: Retrieved user type should match expected:<Customer> but was:<null>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at Electricity.dataAccessOutput.LoginDAOTest.testAuthenticate(LoginDAOTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+

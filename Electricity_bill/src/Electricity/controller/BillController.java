@@ -437,4 +437,37 @@ public class BillController {
         // Update bill status to "Paid"
         return updateBillStatus(meter, month, "Paid");
     }
+    
+    /**
+     * Get all unpaid bills
+     * @return List of bills with "UNPAID" status
+     */
+    public List<Bill> getUnpaidBills() {
+        return billDAO.getUnpaidBills();
+    }
+    
+    /**
+     * Get unpaid bills formatted for UI display
+     * @return List of formatted display data for unpaid bills
+     */
+    public List<BillDisplayData> getUnpaidBillsDisplayData() {
+        List<Bill> unpaidBills = getUnpaidBills();
+        List<BillDisplayData> displayData = new ArrayList<>();
+        
+        if (unpaidBills == null) {
+            return displayData;
+        }
+        
+        for (Bill bill : unpaidBills) {
+            BillDisplayData data = new BillDisplayData();
+            data.meterNumber = bill.getMeter();
+            data.month = bill.getMonth();
+            data.units = bill.getUnits();
+            data.totalBill = String.format("%.2f", bill.getTotalBill());
+            data.status = bill.getStatus();
+            displayData.add(data);
+        }
+        
+        return displayData;
+    }
 }
