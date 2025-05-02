@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Electricity.model.LoginTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.187 s <<< FAILURE! -- in Electricity.model.LoginTest
-Electricity.model.LoginTest.testEqualsAndHashCode -- Time elapsed: 0.015 s <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.067 s <<< FAILURE! -- in Electricity.model.LoginTest
+Electricity.model.LoginTest.testEqualsAndHashCode -- Time elapsed: 0.003 s <<< FAILURE!
 java.lang.AssertionError: Identical logins should be equal expected: Electricity.model.Login<Login{meterNo='M12345', username='johndoe', name='John Doe', userType='Customer'}> but was: Electricity.model.Login<Login{meterNo='M12345', username='johndoe', name='John Doe', userType='Customer'}>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)

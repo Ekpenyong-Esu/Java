@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.model.MeterTest" time="0.184" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.model.MeterTest" time="0.055" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694 2025-05-01T12-08-50_185-jvmRun1 surefire-20250501120850403_1tmp surefire_0-20250501120850403_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255\surefirebooter-20250502132405573_3.jar C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255 2025-05-02T13-24-05_198-jvmRun1 surefire-20250502132405573_1tmp surefire_0-20250502132405573_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mahon\Desktop\java\Electricity_bill\target\test-classes;C:\Users\mahon\Desktop\java\Electricity_bill\target\classes;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mahon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mahon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.2\junit-vintage-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mahon\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\mahon\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\mahon\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\mahon\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\mahon\.m2\repository\org\xerial\sqlite-jdbc\3.45.1.0\sqlite-jdbc-3.45.1.0.jar;C:\Users\mahon\.m2\repository\net\sourceforge\rs2xml\rs2xml\1.0\rs2xml-1.0.jar;C:\Users\mahon\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255\surefirebooter-20250502132405573_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.27+6"/>
@@ -61,9 +61,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testSettersAndGetters" classname="Electricity.model.MeterTest" time="0.0"/>
-  <testcase name="testMeterConstructor" classname="Electricity.model.MeterTest" time="0.0"/>
-  <testcase name="testEqualsAndHashCode" classname="Electricity.model.MeterTest" time="0.18">
+  <testcase name="testSettersAndGetters" classname="Electricity.model.MeterTest" time="0.001"/>
+  <testcase name="testMeterConstructor" classname="Electricity.model.MeterTest" time="0.001"/>
+  <testcase name="testEqualsAndHashCode" classname="Electricity.model.MeterTest" time="0.049">
     <failure message="Identical meters should be equal expected: Electricity.model.Meter&lt;Meter{meterNumber=&apos;M12345&apos;, meterLocation=&apos;Inside&apos;, meterType=&apos;Electric&apos;, phaseCode=&apos;PC001&apos;, billType=&apos;Normal&apos;, days=30}&gt; but was: Electricity.model.Meter&lt;Meter{meterNumber=&apos;M12345&apos;, meterLocation=&apos;Inside&apos;, meterType=&apos;Electric&apos;, phaseCode=&apos;PC001&apos;, billType=&apos;Normal&apos;, days=30}&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Identical meters should be equal expected: Electricity.model.Meter<Meter{meterNumber='M12345', meterLocation='Inside', meterType='Electric', phaseCode='PC001', billType='Normal', days=30}> but was: Electricity.model.Meter<Meter{meterNumber='M12345', meterLocation='Inside', meterType='Electric', phaseCode='PC001', billType='Normal', days=30}>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -72,5 +72,5 @@
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 ]]></failure>
   </testcase>
-  <testcase name="testDefaultConstructor" classname="Electricity.model.MeterTest" time="0.0"/>
+  <testcase name="testDefaultConstructor" classname="Electricity.model.MeterTest" time="0.002"/>
 </testsuite>

@@ -23,7 +23,7 @@ public class TaxConfiguration extends JFrame implements ActionListener {
                    serviceTaxLabel, levyLabel, fixedTaxLabel, statusLabel;
     private JTextField costPerUnitField, meterRentField, serviceChargeField, 
                        serviceTaxField, levyField, fixedTaxField;
-    private JButton saveButton, updateButton, cancelButton, clearButton;
+    private JButton saveButton, updateButton, cancelButton, clearButton, deleteButton;
     private JTable taxTable;
     private DefaultTableModel tableModel;
     private JScrollPane scrollPane;
@@ -116,15 +116,18 @@ public class TaxConfiguration extends JFrame implements ActionListener {
         updateButton = new JButton("Update");
         cancelButton = new JButton("Cancel");
         clearButton = new JButton("Clear");
+        deleteButton = new JButton("Delete");
         
         // Add action listeners to buttons
         saveButton.addActionListener(this);
         updateButton.addActionListener(this);
         cancelButton.addActionListener(this);
         clearButton.addActionListener(this);
+        deleteButton.addActionListener(this);
         
-        // Initially disable update button
+        // Initially disable update and delete buttons
         updateButton.setEnabled(false);
+        deleteButton.setEnabled(false);
         
         // Initialize table
         String[] columnNames = {"ID", "Cost/Unit", "Meter Rent", "Service Charge", 
@@ -145,7 +148,7 @@ public class TaxConfiguration extends JFrame implements ActionListener {
                 int row = taxTable.getSelectedRow();
                 int id = Integer.parseInt(tableModel.getValueAt(row, 0).toString());
                 selectedTax = taxController.getTaxById(id);
-                
+
                 if (selectedTax != null) {
                     costPerUnitField.setText(String.valueOf(selectedTax.getCostPerUnit()));
                     meterRentField.setText(String.valueOf(selectedTax.getMeterRent()));
@@ -153,9 +156,10 @@ public class TaxConfiguration extends JFrame implements ActionListener {
                     serviceTaxField.setText(String.valueOf(selectedTax.getServiceTax()));
                     levyField.setText(String.valueOf(selectedTax.getClimateChangeLevy()));
                     fixedTaxField.setText(String.valueOf(selectedTax.getFixedTax()));
-                    
-                    // Enable update button and disable save button
+
+                    // Enable update and delete buttons, disable save button
                     updateButton.setEnabled(true);
+                    deleteButton.setEnabled(true); // Highlight delete button
                     saveButton.setEnabled(false);
                 }
             }
@@ -182,6 +186,7 @@ public class TaxConfiguration extends JFrame implements ActionListener {
         buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         buttonPanel.add(saveButton);
         buttonPanel.add(updateButton);
+        buttonPanel.add(deleteButton);
         buttonPanel.add(clearButton);
         buttonPanel.add(cancelButton);
         
@@ -273,6 +278,7 @@ public class TaxConfiguration extends JFrame implements ActionListener {
         taxTable.clearSelection();
         
         updateButton.setEnabled(false);
+        deleteButton.setEnabled(false);
         saveButton.setEnabled(true);
         
         statusLabel.setText("");

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.controller.TaxControllerTest" time="2.091" tests="8" errors="0" skipped="0" failures="7">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.controller.TaxControllerTest" time="2.52" tests="8" errors="0" skipped="0" failures="7">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694 2025-05-01T12-08-50_185-jvmRun1 surefire-20250501120850403_1tmp surefire_0-20250501120850403_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255\surefirebooter-20250502132405573_3.jar C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255 2025-05-02T13-24-05_198-jvmRun1 surefire-20250502132405573_1tmp surefire_0-20250502132405573_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mahon\Desktop\java\Electricity_bill\target\test-classes;C:\Users\mahon\Desktop\java\Electricity_bill\target\classes;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mahon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mahon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.2\junit-vintage-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mahon\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\mahon\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\mahon\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\mahon\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\mahon\.m2\repository\org\xerial\sqlite-jdbc\3.45.1.0\sqlite-jdbc-3.45.1.0.jar;C:\Users\mahon\.m2\repository\net\sourceforge\rs2xml\rs2xml\1.0\rs2xml-1.0.jar;C:\Users\mahon\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255\surefirebooter-20250502132405573_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.27+6"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testGetTaxHistory" classname="Electricity.controller.TaxControllerTest" time="1.116">
+  <testcase name="testGetTaxHistory" classname="Electricity.controller.TaxControllerTest" time="1.623">
     <failure message="expected:&lt;2&gt; but was:&lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<2> but was:<0>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -138,7 +138,7 @@ Error getting all taxes: Unknown column 'id' in 'order clause'
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testUpdateTaxRates" classname="Electricity.controller.TaxControllerTest" time="0.174">
+  <testcase name="testUpdateTaxRates" classname="Electricity.controller.TaxControllerTest" time="0.114">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -217,7 +217,7 @@ Error updating tax: Unknown column 'id' in 'where clause'
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testGetCurrentTaxRates" classname="Electricity.controller.TaxControllerTest" time="0.23">
+  <testcase name="testGetCurrentTaxRates" classname="Electricity.controller.TaxControllerTest" time="0.203">
     <failure message="expected:&lt;Tax{id=0, costPerUnit=9.5, meterRent=55.0, serviceCharge=22.5, serviceTax=5.5, climateChangeLevy=1.25, fixedTax=18.5}&gt; but was:&lt;Tax{id=0, costPerUnit=0.0, meterRent=0.0, serviceCharge=0.0, serviceTax=0.0, climateChangeLevy=0.0, fixedTax=0.0}&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<Tax{id=0, costPerUnit=9.5, meterRent=55.0, serviceCharge=22.5, serviceTax=5.5, climateChangeLevy=1.25, fixedTax=18.5}> but was:<Tax{id=0, costPerUnit=0.0, meterRent=0.0, serviceCharge=0.0, serviceTax=0.0, climateChangeLevy=0.0, fixedTax=0.0}>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -294,8 +294,8 @@ Error getting current tax: Unknown column 'id' in 'order clause'
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testCreateTaxWithInvalidValues" classname="Electricity.controller.TaxControllerTest" time="0.031"/>
-  <testcase name="testCalculateBillTax" classname="Electricity.controller.TaxControllerTest" time="0.07">
+  <testcase name="testCreateTaxWithInvalidValues" classname="Electricity.controller.TaxControllerTest" time="0.01"/>
+  <testcase name="testCalculateBillTax" classname="Electricity.controller.TaxControllerTest" time="0.084">
     <failure message="expected:&lt;149.5&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<149.5> but was:<0.0>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -372,7 +372,7 @@ Error getting current tax: Unknown column 'id' in 'order clause'
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testCalculateTotalBill" classname="Electricity.controller.TaxControllerTest" time="0.14">
+  <testcase name="testCalculateTotalBill" classname="Electricity.controller.TaxControllerTest" time="0.12">
     <failure message="expected:&lt;1099.5&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<1099.5> but was:<0.0>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -510,7 +510,7 @@ java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'order clause'
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testDeleteTaxEntry" classname="Electricity.controller.TaxControllerTest" time="0.072">
+  <testcase name="testDeleteTaxEntry" classname="Electricity.controller.TaxControllerTest" time="0.071">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -589,7 +589,7 @@ Error deleting tax: Unknown column 'id' in 'where clause'
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testCreateTax" classname="Electricity.controller.TaxControllerTest" time="0.222">
+  <testcase name="testCreateTax" classname="Electricity.controller.TaxControllerTest" time="0.229">
     <failure message="&#10;Wanted but not invoked:&#10;taxDAO.saveTax(&lt;any Electricity.model.Tax&gt;);&#10;-&gt; at Electricity.dataAccessOutput.TaxDAO.saveTax(TaxDAO.java:23)&#10;Actually, there were zero interactions with this mock.&#10;" type="Wanted but not invoked"><![CDATA[Wanted but not invoked:
 taxDAO.saveTax(<any Electricity.model.Tax>);
 -> at Electricity.dataAccessOutput.TaxDAO.saveTax(TaxDAO.java:23)

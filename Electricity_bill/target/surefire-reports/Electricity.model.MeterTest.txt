@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Electricity.model.MeterTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.184 s <<< FAILURE! -- in Electricity.model.MeterTest
-Electricity.model.MeterTest.testEqualsAndHashCode -- Time elapsed: 0.180 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.055 s <<< FAILURE! -- in Electricity.model.MeterTest
+Electricity.model.MeterTest.testEqualsAndHashCode -- Time elapsed: 0.049 s <<< FAILURE!
 java.lang.AssertionError: Identical meters should be equal expected: Electricity.model.Meter<Meter{meterNumber='M12345', meterLocation='Inside', meterType='Electric', phaseCode='PC001', billType='Normal', days=30}> but was: Electricity.model.Meter<Meter{meterNumber='M12345', meterLocation='Inside', meterType='Electric', phaseCode='PC001', billType='Normal', days=30}>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.dataAccessOutput.MeterDAOTest" time="0.137" tests="11" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Electricity.dataAccessOutput.MeterDAOTest" time="0.121" tests="11" errors="0" skipped="0" failures="4">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694 2025-05-01T12-08-50_185-jvmRun1 surefire-20250501120850403_1tmp surefire_0-20250501120850403_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255\surefirebooter-20250502132405573_3.jar C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255 2025-05-02T13-24-05_198-jvmRun1 surefire-20250502132405573_1tmp surefire_0-20250502132405573_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mahon\Desktop\java\Electricity_bill\target\test-classes;C:\Users\mahon\Desktop\java\Electricity_bill\target\classes;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mahon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mahon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\mahon\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.2\junit-vintage-engine-5.10.2.jar;C:\Users\mahon\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mahon\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\mahon\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\mahon\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahon\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\mahon\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\mahon\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\mahon\.m2\repository\org\xerial\sqlite-jdbc\3.45.1.0\sqlite-jdbc-3.45.1.0.jar;C:\Users\mahon\.m2\repository\net\sourceforge\rs2xml\rs2xml\1.0\rs2xml-1.0.jar;C:\Users\mahon\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\mahon\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire8922407929236876694\surefirebooter-20250501120850403_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mahon\AppData\Local\Temp\surefire12933409460905476255\surefirebooter-20250502132405573_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.27+6"/>
@@ -61,8 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testGetAllMetersSQLException" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.007"/>
-  <testcase name="testUpdateMeter" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.025">
+  <testcase name="testGetAllMetersSQLException" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.01"/>
+  <testcase name="testUpdateMeter" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.029">
     <failure message="&#10;Argument(s) are different! Wanted:&#10;mockConnection.prepareStatement(&#10;    contains(&quot;UPDATE meter SET&quot;)&#10;);&#10;-&gt; at Electricity.dataAccessOutput.MeterDAOTest.testUpdateMeter(MeterDAOTest.java:219)&#10;Actual invocations have different arguments:&#10;mockConnection.prepareStatement(&#10;    &quot;UPDATE meter_info SET meter_location = ?, meter_type = ?, phase_code = ?, bill_type = ?, days = ? WHERE meter_number = ?&quot;&#10;);&#10;-&gt; at Electricity.dataAccessOutput.MeterDAO.updateMeter(MeterDAO.java:97)&#10;mockConnection.close(&#10;    &#10;);&#10;-&gt; at Electricity.dataAccessOutput.BaseDAO.closeConnection(BaseDAO.java:75)&#10;" type="Argument(s) are different! Wanted"><![CDATA[Argument(s) are different! Wanted:
 mockConnection.prepareStatement(
     contains("UPDATE meter SET")
@@ -133,10 +133,10 @@ mockConnection.close(
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="testAddMeter" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.015"/>
-  <testcase name="testGetMeterByNumberNotFound" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.01"/>
+  <testcase name="testAddMeter" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.007"/>
+  <testcase name="testGetMeterByNumberNotFound" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.007"/>
   <testcase name="testUpdateMeterFailure" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.007"/>
-  <testcase name="testGetMetersByLocation" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.012">
+  <testcase name="testGetMetersByLocation" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.009">
     <failure message="&#10;Argument(s) are different! Wanted:&#10;mockConnection.prepareStatement(&#10;    contains(&quot;SELECT * FROM meter WHERE meter_location = ?&quot;)&#10;);&#10;-&gt; at Electricity.dataAccessOutput.MeterDAOTest.testGetMetersByLocation(MeterDAOTest.java:205)&#10;Actual invocations have different arguments:&#10;mockConnection.prepareStatement(&#10;    &quot;SELECT * FROM meter_info WHERE meter_location = ?&quot;&#10;);&#10;-&gt; at Electricity.dataAccessOutput.MeterDAO.getMetersByLocation(MeterDAO.java:189)&#10;mockConnection.close(&#10;    &#10;);&#10;-&gt; at Electricity.dataAccessOutput.BaseDAO.closeConnection(BaseDAO.java:75)&#10;" type="Argument(s) are different! Wanted"><![CDATA[Argument(s) are different! Wanted:
 mockConnection.prepareStatement(
     contains("SELECT * FROM meter WHERE meter_location = ?")
@@ -156,8 +156,8 @@ mockConnection.close(
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 ]]></failure>
   </testcase>
-  <testcase name="testAddMeterFailure" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.009"/>
-  <testcase name="testGetAllMeters" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.008">
+  <testcase name="testAddMeterFailure" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.006"/>
+  <testcase name="testGetAllMeters" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.01">
     <failure message="First meter number should be M12345 expected:&lt;M12345&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: First meter number should be M12345 expected:<M12345> but was:<null>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -166,7 +166,7 @@ mockConnection.close(
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 ]]></failure>
   </testcase>
-  <testcase name="testGetMeterByNumberSQLException" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.009">
+  <testcase name="testGetMeterByNumberSQLException" classname="Electricity.dataAccessOutput.MeterDAOTest" time="0.006">
     <system-out><![CDATA[Error getting meter by number: Test exception
 ]]></system-out>
     <system-err><![CDATA[java.sql.SQLException: Test exception

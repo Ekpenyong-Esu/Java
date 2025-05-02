@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Electricity.dataAccessOutput.MeterDAOTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.137 s <<< FAILURE! -- in Electricity.dataAccessOutput.MeterDAOTest
-Electricity.dataAccessOutput.MeterDAOTest.testUpdateMeter -- Time elapsed: 0.025 s <<< FAILURE!
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.121 s <<< FAILURE! -- in Electricity.dataAccessOutput.MeterDAOTest
+Electricity.dataAccessOutput.MeterDAOTest.testUpdateMeter -- Time elapsed: 0.029 s <<< FAILURE!
 Argument(s) are different! Wanted:
 mockConnection.prepareStatement(
     contains("UPDATE meter SET")
@@ -21,7 +21,7 @@ mockConnection.close(
 	at Electricity.dataAccessOutput.MeterDAOTest.testUpdateMeter(MeterDAOTest.java:219)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.dataAccessOutput.MeterDAOTest.testGetMetersByLocation -- Time elapsed: 0.012 s <<< FAILURE!
+Electricity.dataAccessOutput.MeterDAOTest.testGetMetersByLocation -- Time elapsed: 0.009 s <<< FAILURE!
 Argument(s) are different! Wanted:
 mockConnection.prepareStatement(
     contains("SELECT * FROM meter WHERE meter_location = ?")
@@ -40,7 +40,7 @@ mockConnection.close(
 	at Electricity.dataAccessOutput.MeterDAOTest.testGetMetersByLocation(MeterDAOTest.java:205)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.dataAccessOutput.MeterDAOTest.testGetAllMeters -- Time elapsed: 0.008 s <<< FAILURE!
+Electricity.dataAccessOutput.MeterDAOTest.testGetAllMeters -- Time elapsed: 0.010 s <<< FAILURE!
 java.lang.AssertionError: First meter number should be M12345 expected:<M12345> but was:<null>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)

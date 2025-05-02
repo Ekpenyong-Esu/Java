@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Electricity.controller.MeterControllerTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.126 s <<< FAILURE! -- in Electricity.controller.MeterControllerTest
-Electricity.controller.MeterControllerTest.testUpdateMeter -- Time elapsed: 0.004 s <<< FAILURE!
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.169 s <<< FAILURE! -- in Electricity.controller.MeterControllerTest
+Electricity.controller.MeterControllerTest.testUpdateMeter -- Time elapsed: 0.009 s <<< FAILURE!
 java.lang.AssertionError: Meter should be updated successfully
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)

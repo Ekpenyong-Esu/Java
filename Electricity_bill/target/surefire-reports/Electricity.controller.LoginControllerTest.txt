@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Electricity.controller.LoginControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.094 s <<< FAILURE! -- in Electricity.controller.LoginControllerTest
-Electricity.controller.LoginControllerTest.testUpdateUser -- Time elapsed: 0.005 s <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.216 s <<< FAILURE! -- in Electricity.controller.LoginControllerTest
+Electricity.controller.LoginControllerTest.testUpdateUser -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: User update should be successful
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)

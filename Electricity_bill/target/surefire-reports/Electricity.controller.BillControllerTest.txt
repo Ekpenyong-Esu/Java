@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: Electricity.controller.BillControllerTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 2.735 s <<< FAILURE! -- in Electricity.controller.BillControllerTest
-Electricity.controller.BillControllerTest.testProcessPayment -- Time elapsed: 2.653 s <<< FAILURE!
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 2.891 s <<< FAILURE! -- in Electricity.controller.BillControllerTest
+Electricity.controller.BillControllerTest.testProcessPayment -- Time elapsed: 2.787 s <<< FAILURE!
 java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at org.junit.Assert.fail(Assert.java:89)
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.controller.BillControllerTest.testGenerateBill -- Time elapsed: 0.006 s <<< FAILURE!
+Electricity.controller.BillControllerTest.testGenerateBill -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at org.junit.Assert.fail(Assert.java:89)
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.controller.BillControllerTest.testProcessPaymentWithInvalidData -- Time elapsed: 0.006 s <<< FAILURE!
+Electricity.controller.BillControllerTest.testProcessPaymentWithInvalidData -- Time elapsed: 0.005 s <<< FAILURE!
 java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at org.junit.Assert.fail(Assert.java:89)
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
@@ -26,13 +26,13 @@ java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.controller.BillControllerTest.testGetBill -- Time elapsed: 0.006 s <<< FAILURE!
+Electricity.controller.BillControllerTest.testGetBill -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at org.junit.Assert.fail(Assert.java:89)
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.controller.BillControllerTest.testGetBillsByMeter -- Time elapsed: 0.006 s <<< FAILURE!
+Electricity.controller.BillControllerTest.testGetBillsByMeter -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at org.junit.Assert.fail(Assert.java:89)
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
@@ -44,7 +44,7 @@ java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 
-Electricity.controller.BillControllerTest.testGetBillWithInvalidData -- Time elapsed: 0.004 s <<< FAILURE!
+Electricity.controller.BillControllerTest.testGetBillWithInvalidData -- Time elapsed: 0.006 s <<< FAILURE!
 java.lang.AssertionError: Failed to inject mock DAOs: taxDAO
 	at org.junit.Assert.fail(Assert.java:89)
 	at Electricity.controller.BillControllerTest.setUp(BillControllerTest.java:47)
